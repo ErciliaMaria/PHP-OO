@@ -1,0 +1,4 @@
+exemplo de
+file que
+será inserido
+no arquivo
