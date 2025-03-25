@@ -1,12 +1,17 @@
 <?php
 
-function calcula_juros_simples(float $valor,float $periodo,float $taxa=10)
+/**
+ * Argumentos nomeados
+ * exemplo abaixo
+ * @return 
+ */
+function Calcula_Juros_simples(float $valor,float $periodo,float $taxa=10)
 {
     return $valor + $valor * $periodo * ($taxa / 100);
 }
-//print calcula_juros_simples(100, 5, 10);
-//print calcula_juros_simples(valor:200, periodo:5, taxa:10);
-//print calcula_juros_simples(valor:200, taxa:5, periodo:10);
+//print Calcula_Juros_simples(100, 5, 10);
+//print Calcula_Juros_simples(valor:200, periodo:5, taxa:10);
+//print Calcula_Juros_simples(valor:200, taxa:5, periodo:10);
 
 //$vetor = array_fill(start_index:0, count:50, value:'ABC');
 //print_r($vetor);
@@ -16,7 +21,7 @@ function calcula_juros_simples(float $valor,float $periodo,float $taxa=10)
 //Parâmetros opcionais
 //print calcula_juros_simples(valor:100, periodo: 5);
 
-function monta_saudacao(string $saudacao,string $nome, string $sobrenome = '', string $tratamento ='')
+function Monta_saudacao(string $saudacao,string $nome, string $sobrenome = '', string $tratamento ='')
 {
     $frase = '';
     $frase .= $saudacao;
@@ -34,10 +39,10 @@ function monta_saudacao(string $saudacao,string $nome, string $sobrenome = '', s
     return $frase;
 }
 //print monta_saudacao('Olá', 'Maria', 'da Silva', 'Sra');
-print monta_saudacao('Boa tarde', 'Ercilia');
-print monta_saudacao('Bom dia', 'Clara', '', 'Dra.');
+print Monta_saudacao('Boa tarde', 'Ercilia');
+print Monta_saudacao('Bom dia', 'Clara', '', 'Dra.');
 
 //desempacota para usar parãmetros da funcao
 $args = ['Olá', 'Maria', 'da Silva', 'senhora'];
 $args2 = ['saudacao' => 'Olá', 'nome' => 'Davi', 'sobrenome' => 'Coelho', 'tratamento' => 'Sr.' ];
-print monta_saudacao(...$args2); 
+print Monta_saudacao(...$args2); 

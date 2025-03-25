@@ -26,11 +26,11 @@ class Cidade
             return $this->estado;
         }
 }
-/*
+
 $estado = new Estado('Rio Grande do Sul');
 $cidade = new Cidade('Porto Alegre', $estado);
 print $cidade->getEstado()->getNome();
-*/
+
 /*
 $cidade = new Cidade('Lajeado');
 //teste para usar além do nullsafe:
