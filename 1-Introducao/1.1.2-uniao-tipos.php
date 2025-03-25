@@ -4,7 +4,7 @@
 
 function calcular_juros_simples(int|float $valor, int|float $periodo, int|float $taxa)
 {
-    return $valor + $valor* $periodo * ($taxa/100);
+    return $valor + $valor * $periodo * ($taxa/100);
 }
 
 print calcular_juros_simples(100.5, 5, 10);

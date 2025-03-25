@@ -6,7 +6,7 @@ $produto->estoque = 10;
 $produto->preco = 8;
 
 $vetor1 = (array) $produto;//converte o objeto em vetor
-
+var_dump($vetor1);
 $vetor2 = [
     'descricao' => 'Café',
     'estoque' => 100,

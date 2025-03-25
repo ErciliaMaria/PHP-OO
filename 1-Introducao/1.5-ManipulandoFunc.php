@@ -9,7 +9,7 @@ function calcula_imc(float $peso, float $altura): float
 function kmMilhas($km)
 {
     //aqui vai existir as variaveis declaradas dentro da funcao
-    //porem podedeclarar uma variavel global dentro desta funcao usando 'global $total';
+    //porem pode declarar uma variavel global dentro desta funcao usando 'global $total';
 
     return $km * 0.6;
 }

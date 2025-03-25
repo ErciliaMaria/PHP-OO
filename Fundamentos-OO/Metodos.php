@@ -9,7 +9,7 @@ class Produto
     public function setDescricao($descricao)
     {
         //para definir o atributo descricao
-        if (is_string($descricao))
+        if (is_string($descricao) )
         {
             $this->descricao = $descricao;
         }

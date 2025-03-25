@@ -2,9 +2,9 @@
 //essa seria a classe Produto
 class Produto{
     //vamos associar a classe produto com a classe fabricante 
-   private $descricao;
-   private $estoque;
-   private $preco;
+    private $descricao;
+    private $estoque;
+    private $preco;
     private $fabricante;
    
 
